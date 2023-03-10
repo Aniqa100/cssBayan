@@ -1,0 +1,17 @@
+body{
+    background: #fff5d6;
+}
+#accordion {
+    list-style-type: none; 
+    margin: 100px auto;
+    width: 600px;
+}
+/*input[type="radio"]{
+    /*visibility: ;
+    height: 0;
+    width: 0;
+  }*/
+  #accordion p img {
+   width: 200;
+   height: 200;
+ }
