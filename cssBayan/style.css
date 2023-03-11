@@ -1,8 +1,17 @@
 body{
     background: #fff5d6;
 }
-h1{
-    position:relative;
+#accordion h1 {
+    color: black;
+}
+#accordion label h4 {
+    color: blue;
+}
+#accordion:hover label h4 {
+    color: black;
+}
+#accordion input:checked ~ label h4 {
+    color: black;
 }
 #accordion {
     margin: 100px auto;
@@ -14,11 +23,10 @@ h1{
     width: 100%;
 }
 #accordion label{
-    padding-left: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-size: 18px;
+    font-size: 1em;
     font-weight: 500;
     cursor: pointer;
     color: black;
