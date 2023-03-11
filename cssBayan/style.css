@@ -39,22 +39,34 @@ body{
 #accordion:hover label i {
     visibility:visible
 }
-#accordion label:hover label i {
+#accordion label:hover i {
     color:#333;
 }
 #accordion input:checked ~ label i {
     color: green;
     transform: rotate(90deg);
 }
-  #accordion input{
+#accordion input{
     display:none;
 }  
-  #accordion p {
+#accordion p {
     max-height:0;
     overflow: hidden;
     transition: 0.5s;
 } 
-  #accordion input:checked ~ p {
+#accordion input:checked ~ p {
     max-height:600px;
-} 
+}
+#accordion li label:hover ~ p {
+    max-height:600px;
+    transition: 0.05s;
+}
+#accordion li label:hover i {
+    color: green;
+    transform: rotate(90deg);
+}
+#accordion p:hover  {
+    max-height:600px;
+}
+
 
