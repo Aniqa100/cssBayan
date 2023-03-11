@@ -1,17 +1,52 @@
 body{
     background: #fff5d6;
 }
+h1{
+    position:relative;
+}
 #accordion {
-    list-style-type: none; 
     margin: 100px auto;
     width: 600px;
+    cursor: pointer;
 }
-/*input[type="radio"]{
-    /*visibility: ;
-    height: 0;
-    width: 0;
-  }*/
-  #accordion p img {
-   width: 200;
-   height: 200;
- }
+#accordion li {
+    list-style-type: none; 
+    width: 100%;
+}
+#accordion label{
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    color: black;
+}
+#accordion label i {
+    color: red;
+    transition: transform 1s; 
+    visibility: hidden
+}
+#accordion:hover label i {
+    visibility:visible
+}
+#accordion label:hover label i {
+    color:#333;
+}
+#accordion input:checked ~ label i {
+    color: green;
+    transform: rotate(90deg);
+}
+  #accordion input{
+    display:none;
+}  
+  #accordion p {
+    max-height:0;
+    overflow: hidden;
+    transition: 0.5s;
+} 
+  #accordion input:checked ~ p {
+    max-height:600px;
+} 
+
