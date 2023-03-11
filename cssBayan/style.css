@@ -33,7 +33,7 @@ body{
 }
 #accordion label i {
     color: red;
-    transition: transform 1s; 
+    transition: transform 0.5s; 
     visibility: hidden
 }
 #accordion:hover label i {
@@ -61,12 +61,17 @@ body{
     max-height:600px;
     transition: 0.05s;
 }
-#accordion li label:hover i {
+/* #accordion li label:hover i {
     color: green;
     transform: rotate(90deg);
-}
+} */
 #accordion p:hover  {
     max-height:600px;
 }
+#accordion li:hover i{
+    color: green;
+    transform: rotate(90deg);
+}
+
 
 
