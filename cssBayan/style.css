@@ -62,6 +62,7 @@ body{
 }  
 #accordion p {
     max-height:0;
+    opacity: 1;
     justify-content: center;
     overflow: hidden;
     transition: 1s;
@@ -79,6 +80,9 @@ body{
 #accordion li:hover i{
     color: darkcyan;
     transform: rotate(90deg);
+}
+#accordion li:active {
+    opacity: 0.33;
 }
 .center{
     display: block;
