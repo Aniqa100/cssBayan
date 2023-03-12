@@ -1,7 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
 body{
-    background: #fff5d6;
+    display:flex;
+    align-items: center;
+    background: #FFF8DC;
+    justify-content: center;
+}
+#accordion {
+    margin: 6.25em auto;
+    width: 37.5em;
+    cursor: pointer;
 }
 #accordion h1 {
+    padding: 0.6em 1.25em;
     color: black;
 }
 #accordion label h4 {
@@ -13,16 +28,12 @@ body{
 #accordion input:checked ~ label h4 {
     color: black;
 }
-#accordion {
-    margin: 100px auto;
-    width: 600px;
-    cursor: pointer;
-}
 #accordion li {
     list-style-type: none; 
     width: 100%;
 }
 #accordion label{
+    padding: 0.6em 1.25em;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -32,7 +43,7 @@ body{
     color: black;
 }
 #accordion label i {
-    color: red;
+    color: darkgray;
     transition: transform 0.5s; 
     visibility: hidden
 }
@@ -43,7 +54,7 @@ body{
     color:#333;
 }
 #accordion input:checked ~ label i {
-    color: green;
+    color: darkcyan;
     transform: rotate(90deg);
 }
 #accordion input{
@@ -51,27 +62,29 @@ body{
 }  
 #accordion p {
     max-height:0;
+    justify-content: center;
     overflow: hidden;
     transition: 0.5s;
 } 
 #accordion input:checked ~ p {
-    max-height:600px;
+    max-height:37.5em;
 }
 #accordion li label:hover ~ p {
-    max-height:600px;
-    transition: 0.05s;
+    max-height:37.5em;
+    transition: 0.5s;
 }
-/* #accordion li label:hover i {
-    color: green;
-    transform: rotate(90deg);
-} */
 #accordion p:hover  {
-    max-height:600px;
+    max-height:37.5em;
 }
 #accordion li:hover i{
-    color: green;
+    color: darkcyan;
     transform: rotate(90deg);
 }
-
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
 
 
