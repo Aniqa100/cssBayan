@@ -44,7 +44,7 @@ body{
 }
 #accordion label i {
     color: darkgray;
-    transition: transform 0.5s; 
+    transition: transform 1s; 
     visibility: hidden
 }
 #accordion:hover label i {
@@ -64,14 +64,14 @@ body{
     max-height:0;
     justify-content: center;
     overflow: hidden;
-    transition: 0.5s;
+    transition: 1s;
 } 
 #accordion input:checked ~ p {
     max-height:37.5em;
 }
 #accordion li label:hover ~ p {
     max-height:37.5em;
-    transition: 0.5s;
+    transition: 1s;
 }
 #accordion p:hover  {
     max-height:37.5em;
