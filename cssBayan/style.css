@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display:flex;
+    align-items: center;
+    background: #FFF8DC;
+    justify-content: center;
+}
+#accordion {
+    margin: 6.25em auto;
+    width: 37.5em;
+    cursor: pointer;
+}
+#accordion h1 {
+    padding: 0.6em 1.25em;
+    color: black;
+}
+#accordion label h4 {
+    color: blue;
+}
+#accordion:hover label h4 {
+    color: black;
+}
+#accordion input:checked ~ label h4 {
+    color: black;
+}
+#accordion li {
+    list-style-type: none; 
+    width: 100%;
+}
+#accordion label{
+    padding: 0.6em 1.25em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1em;
+    font-weight: 500;
+    cursor: pointer;
+    color: black;
+}
+#accordion label i {
+    color: darkgray;
+    transition: transform 1s; 
+    visibility: hidden
+}
+#accordion:hover label i {
+    visibility:visible
+}
+#accordion label:hover i {
+    color:#333;
+}
+#accordion input:checked ~ label i {
+    color: darkcyan;
+    transform: rotate(90deg);
+}
+#accordion input{
+    display:none;
+}  
+#accordion p {
+    max-height:0;
+    opacity: 1;
+    justify-content: center;
+    overflow: hidden;
+    transition: 1s;
+} 
+#accordion input:checked ~ p {
+    max-height:37.5em;
+}
+#accordion li label:hover ~ p {
+    max-height:37.5em;
+    transition: 1s;
+}
+#accordion p:hover  {
+    max-height:37.5em;
+}
+#accordion li:hover i{
+    color: darkcyan;
+    transform: rotate(90deg);
+}
+#accordion li:active {
+    opacity: 0.33;
+}
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+
